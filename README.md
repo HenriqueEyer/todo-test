@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é um projeto para o conteúdo da semana 16, sobre `RTL`.
 
-## Available Scripts
+### Antes de iniciar
 
-In the project directory, you can run:
+Crie um fork desse projeto, para isso siga esse [tutorial de como realizar um fork](https://github.com/facebook/create-react-app).
 
-### `npm start`
+Ápos feito o fork, clone o repositório criado para o seu computador.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Rode o `npm install`.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Vá para a branch master do seu projeto e execute o comando:
+- `git branch`, verifique se apareceu as branches:
 
-### `npm test`
+  `exercise-one`
+  `exercise-two`
+  `exercise-three`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Cada branch dessas será um exercício.
+- Mude para a branch `exercise-one`: `git checkout exercise-one`. Nessa branch é onde vocẽ realizará a solução para o exercício 1, e assim por diante.
 
-### `npm run build`
+Observe o que deve ser feito nas instruções para cada exercício.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ápos a solução dos exercícios, abra um PR no repositório, se quiser pode merger para a master, fique livre!
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Atenção, quando for criar o PR você se deparará com essa tela:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![PR do exercício](images/example-pr.png)
 
-### `npm run eject`
+É necessário realizar uma mudança, clique no *base repository* como na imagem abaixo:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Mudando a base do repositório](images/change-base.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Mude para o seu repositório, seu nome estará na frente do nome dele, exemplo `antonio/TicTacToe`. Depois desse passo a página deve ficar assim:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Ápos mudança](images/after-change.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ai só criar o pr clicando no botão `Create Pull Request`.
 
-## Learn More
+Para cada PR realize esse processo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### COMEÇANDO OS EXERCÍCIOS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Exercício 1
 
-### Code Splitting
+Descrição do exercício, realize os teste:
+- Necessário um botão para adicionar a tarefa..
+- Botão precisa conter o texto "Adicionar" .
+- Ao ser clicado a tarefa digitada pelo o usuário precisa ser salva.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Pode adicionar mais testes que acha relevantes para verificar a funcionalidade desse botão.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+#### Exercício 2
 
-### Making a Progressive Web App
+Descrição do exercício, teste a aplicação, atenção ao o que o test orienta:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- Use o array já disponibilizado no código para realizar os testes, cada elemento do array será uma tarefa, simule a adição todas e depois verifique se eles estão aparecendo.
+- Teste apenas o componente Item, ao passar uma string ela precisa aparecer na tela.
+---
 
-### Advanced Configuration
+#### Exercício 3 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Diferente dos outros, testes já estão pronto, necessário criar a funcionalidade.
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Adicionar funcionalidade de selecionar uma task.
+- Botão para apagar a task selecionada.
+- Observe bem como os teste estão escritos, todos devem passar quando terminar a funcionalidade.
