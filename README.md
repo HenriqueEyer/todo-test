@@ -12,13 +12,8 @@ Vá para a branch master do seu projeto e execute o comando:
 - `git branch`, verifique se apareceu as branches:
 
   `exercise-one`
-<<<<<<< HEAD
-  `exercise-2`
-  `exercise-3`
-=======
   `exercise-two`
   `exercise-three`
->>>>>>> master
 
 - Cada branch dessas será um exercício.
 - Mude para a branch `exercise-one`: `git checkout exercise-one`. Nessa branch é onde vocẽ realizará a solução para o exercício 1, e assim por diante.
@@ -47,30 +42,25 @@ Para cada PR realize esse processo.
 
 #### Exercício 1
 
-Teste as configurações iniciais do jogo, como ele começa:
+Descrição do exercício, realize os teste:
+- Necessário um botão para adicionar a tarefa..
+- Botão precisa conter o texto "Adicionar" .
+- Ao ser clicado a tarefa digitada pelo o usuário precisa ser salva.
 
-- Campos vazios;
-- Sem mensagem de Fim de jogo;
-- 9 Casas renderizadas.
-
-Fique livre para adicionar novos testes.
+Pode adicionar mais testes que acha relevantes para verificar a funcionalidade desse botão.
 
 ---
 
 #### Exercício 2
 
-Teste o comportamento de cada casa, alguns exemplos:
+Descrição do exercício, teste a aplicação, atenção ao o que o test orienta:
 
-- O símbolo mudar quando clica em uma e depois em outra, mostrando a troca do jogador;
-- Casa não pode ser mudada depois de escolhida por algum jogador;
-
-Caso tenha dúvida volte no conteúdo ou olhe na documentação, lembre que abordamos apenas algumas querys, tem outras que podem ser utilizadas.
-
+- Use o array já disponibilizado no código para realizar os testes, cada elemento do array será uma tarefa, simule a adição todas e depois verifique se eles estão aparecendo.
+- Teste apenas o componente Item, ao passar uma string ela precisa aparecer na tela.
 ---
 
 #### Exercício 3 
 
-Exercício 3
 Diferente dos outros, testes já estão pronto, necessário criar a funcionalidade.
 
 - Adicionar funcionalidade de selecionar uma task.
